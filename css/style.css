@@ -1,29 +1,21 @@
-html {
-    scroll-behavior: smooth;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul {
-    list-style: none;
-}
-
 body {
     background-color: #000;
-    font-family: sans-serif;
     font-size: 22px;
+    font-family: sans-serif;
 }
 
 .topmenu {
     display: flex;
     background-color: #3b362e;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
 }
