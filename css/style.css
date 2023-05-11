@@ -19,3 +19,15 @@ a {
 ul{
     list-style: none;
 }
+
+.submenu{
+    max-width: 200px;
+
+}
+.submenu a{
+    border-bottom: 1px solid #000;
+    padding: 10px 20px;
+    background-color: #eee;
+    font-size: 16px;
+
+}
