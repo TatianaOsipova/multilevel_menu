@@ -18,27 +18,40 @@ a {
     display: inline-block;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-.submenu{
-    max-width: 200px;
+.submenu {
+    min-width: 200px;
     position: absolute;
     z-index: 5;
-
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    visibility: hidden;
+    opacity: 0;
 }
 
-.submenu li{
+.submenu li {
     position: relative;
 }
 
-.submenu .submenu{
+.submenu .submenu {
     position: absolute;
-
+    top: 0;
+    left: 100%;
+    transition: .3s linear;
 }
-.submenu a{
+
+.topmenu li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    transform:rotateX(0deg);
+}
+
+.submenu a {
     border-bottom: 1px solid #000;
     padding: 10px 20px;
     background-color: #eee;
